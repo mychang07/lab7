@@ -82,8 +82,9 @@ Exercise 2A: Replace the `0` in the expression below with an
 expression that extracts the red channel of the color named Red,
 thereby naming the result `red_channel`.
 ......................................................................*)
+open Color ;;
 
-let red_channel : int = 0 ;;
+let red_channel (c: color) : int = red c ;;
 
 (* Let's investigate one way that a signature can be useful. Although
 color.ml contains an implementation of a basic color module, the
